@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 id="level-title">Tic Tac Toe</h1>
+    <div class="join-container">
+      <main class="join-main">
+        <form action="/" method="post">
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter username..."
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="room">Create Room</label>
+
+            <input
+              type="text"
+              name="room"
+              id="room"
+              placeholder="Create/join room..."
+              required
+            />
+          </div>
+          <button type="submit" class="start">Start Game</button>
+          <div>
+            <button
+              name="type"
+              type="submit"
+              class="start"
+              value="vsai"
+              formnovalidate
+            >
+              VS AI
+            </button>
+            <button
+              name="type"
+              type="submit"
+              class="start"
+              value="offline"
+              formnovalidate
+            >
+              Play Offline
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <footer><a href="mailto:jayantapaul644@gmail.com"> @Ananta</a></footer>
+  </body>
+</html>

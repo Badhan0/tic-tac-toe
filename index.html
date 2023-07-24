@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  </head>
+
+  <body>
+    <h1 id="level-title">Tic Tac Toe</h1>
+    <select class="target" hidden>
+      <option selected="true" disabled="disabled">
+        Choose difficulty level
+      </option>
+      <option value="1">Easy</option>
+      <option value="2">Medium</option>
+      <option value="3">Hard</option>
+    </select>
+    <h3 class="p1">Player-1(O) &nbsp &nbsp Player-2(X)</h3>
+    <div id="divclone" class="container">
+      <div class="hrline">
+        <div class="line1"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+        <div class="line2"></div>
+        <div class="line5"></div>
+      </div>
+      <div class="container2">
+        <div class="row1">
+          <div type="button" id="0" class="btn">
+            <div id="m0"></div>
+            <div id="n0"></div>
+          </div>
+
+          <div type="button" id="1" class="btn">
+            <div id="m1"></div>
+            <div id="n1"></div>
+          </div>
+          <div type="button" id="2" class="btn">
+            <div id="m2"></div>
+            <div id="n2"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div type="button" id="3" class="btn">
+            <div id="m3"></div>
+            <div id="n3"></div>
+          </div>
+          <div type="button" id="4" class="btn">
+            <div id="m4"></div>
+            <div id="n4"></div>
+          </div>
+          <div type="button" id="5" class="btn">
+            <div id="m5"></div>
+            <div id="n5"></div>
+          </div>
+        </div>
+
+        <div class="row3">
+          <div type="button" id="6" class="btn">
+            <div id="m6"></div>
+            <div id="n6"></div>
+          </div>
+          <div type="button" id="7" class="btn">
+            <div id="m7"></div>
+            <div id="n7"></div>
+          </div>
+          <div type="button" id="8" class="btn">
+            <div id="m8"></div>
+            <div id="n8"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="para"></p>
+    <a href="/">
+      <button type="button" class="start" hidden>New Game</button></a
+    >
+    <!--   onclick="window.location.reload()" -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js" charset="utf-8"></script>
+
+    <footer><a href="mailto:jayantapaul644@gmail.com"> @Ananta</a></footer>
+  </body>
+</html>
